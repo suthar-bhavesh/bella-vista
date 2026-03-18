@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             InputError.forEach((error) => {
                 error.textContent = "Please fill required fields";
-                error.style.border = "red";
+                error.style.color = "red";
                 return;
             })
         }
