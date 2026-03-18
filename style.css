@@ -33,6 +33,11 @@ body {
     align-items: center;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -260,6 +265,11 @@ body {
     color: #2c3e50;
 }
 
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 
@@ -281,6 +291,11 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder {
+    font-size: 15px;
 }
 
 .form-group input:focus,
@@ -376,7 +391,7 @@ body {
         width: 100%;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         font-size: 0.7rem;
     }
 }
@@ -508,4 +523,9 @@ footer {
     text-align: center;
     padding-top: 2rem;
     color: #bdc3c7;
+}
+
+.error {
+    font-size: 13px;
+    color: red;
 }

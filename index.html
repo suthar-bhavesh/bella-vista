@@ -15,8 +15,10 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <h1>Bella Vista</h1>
-                    <span class="tagline">Authentic Italian Cuisine</span>
+                    <a href="index.html">
+                        <h1>Bella Vista</h1>
+                        <span class="tagline">Authentic Italian Cuisine</span>
+                    </a>
                 </div>
                 <ul class="navlinks">
                     <li><a href="#home">Home</a></li>
@@ -106,51 +108,58 @@
                             <p>123 Italian street, City Center, NY 10001</p>
 
                             <strong>Phone:</strong>
-                            <p>(555) 123-4567</p>
+                            <a href="tel: (555) 123-4567">(555) 123-4567</a>
 
                             <strong>Email:</strong>
-                            <p>info@bellavista.com</p>
+                            <a href="mailto: info@bellavista.com">info@bellavista.com</a>
                         </div>
                     </div>
 
                     <div class="contact-form">
                         <h3>Make a Reservation</h3>
 
-                        <form action="#">
+                        <form action="#" method="post" class="myForm">
                             <div class="form-group">
                                 <label for="name">Full Name:</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name" placeholder="Full Name" class="userFields">
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email Address:</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" placeholder="Email Address"
+                                    class="userFields">
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
                                 <label for="number">Phone:</label>
-                                <input type="tel" id="phone" name="phone">
+                                <input type="tel" id="number" name="number" placeholder="Phone Number"
+                                    class="userFields">
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
                                 <label for="date">Reservation Date:</label>
-                                <input type="date" id="date" name="date" required>
+                                <input type="date" id="date" name="date" class="userFields">
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
                                 <label for="time">Time:</label>
-                                <select name="time" id="time" required>
+                                <select name="time" id="time" class="userFields">
                                     <option value="">Select Time</option>
                                     <option value="18:00">6:00 PM</option>
                                     <option value="19:00">7:00 PM</option>
                                     <option value="20:00">8:00 PM</option>
                                     <option value="21:00">9:00 PM</option>
                                 </select>
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
-                                <label for="time">Number of Guests:</label>
-                                <select name="time" id="time" required>
+                                <label for="guest">Number of Guests:</label>
+                                <select name="guest" id="guest" class="userFields">
                                     <option value="">Select Guests</option>
                                     <option value="1 Guest">1 Guest</option>
                                     <option value="2 Guest">2 Guest</option>
@@ -158,15 +167,18 @@
                                     <option value="4 Guest">4 Guest</option>
                                     <option value="5+ Guest">5+ Guest</option>
                                 </select>
+                                <p class="error"></p>
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Special Requests:</label>
                                 <textarea name="message" id="message" rows="5"
-                                    placeholder="Any: special dietry requirement or requests...."></textarea>
+                                    placeholder="Any: special dietry requirement or requests...."
+                                    class="userFields"></textarea>
+                                <p class="error"></p>
                             </div>
 
-                            <button type="submit">Submit Reservation</button>
+                            <button type="submit" class="Submitbtn">Submit Reservation</button>
                         </form>
                     </div>
                 </div>
@@ -214,6 +226,8 @@
         </footer>
         <!-- footer sectin ended here -->
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
